@@ -1,4 +1,3 @@
-# aws-billing-alert-terraform
 # AWS Billing Alert Terraform Module
 
 This repository contains a Terraform module that helps set up AWS billing alerts. Once configured, it will notify users when AWS charges exceed the specified amounts.
@@ -58,9 +57,41 @@ Now you have successfully cloned the repository to your local machine and can st
 
 **Note:** Ensure that you have Git installed on your machine before running the git clone command.
 
+- Replace `/path/to/your/directory`
 
+# Terraform Installation Guide for Amazon Linux
 
-Replace `/path/to/your/directory`
+This guide will walk you through the installation of Terraform on an Amazon Linux system using `yum`. Terraform is an infrastructure as code tool that allows you to define and provision infrastructure resources in a declarative configuration file.
+
+## Prerequisites
+
+Before you begin, make sure you have the following prerequisites:
+- An Amazon Linux system.
+- `sudo` or root access to your server.
+
+## Installation Steps
+
+Follow these steps to install Terraform on your Amazon Linux system:
+
+```
+# Install necessary packages
+sudo yum install -y yum-utils shadow-utils
+
+# Add HashiCorp repository for Amazon Linux
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+
+# Install Terraform
+sudo yum -y install terraform
+
+```
+
+After the installation is complete, you can verify the installation by checking the Terraform version:
+
+```
+terraform --version
+
+```
+
 
 2. **Initialize Terraform**
 
